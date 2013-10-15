@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+	<link rel="stylesheet" type="text/css" href="themes/default/easyui.css">
+    <style>
+      body {
+        min-width: 100px;
+        overflow-x: hidden;
+      }
+
+      .logo {
+        margin: 5px;
+        border: 2px solid black;
+        vertical-align: middle;
+        width: 75px;
+        height: 75px;
+		border: none;
+		width: auto;
+		left: 50%;
+      }
+	  
+	  .centrer {
+		text-align:center;
+	  }
+	  
+	  .myclass {width: 150px;}
+	  .combo-text {width: auto !important;}
+	  
+    </style>
+  </head>
+  <body>
+  <div class="centrer">
+	<form>
+		<input type="button" class="myclass" value="Logout" id="logout" tabindex=1 /><br />
+		<input type="button" class="myclass" value="Clear&Logout" id="clear" tabindex=2 /><br />
+		<input type="button" class="myclass" value="Build" id='build' tabindex=3 /><br />
+		<input type="button" class="myclass" value="Upgrade" id='upgrade' tabindex=4 /><br /><br />
+		<select id="combobox" class="myclass" placeholder="Sélectionner ...">
+</select>
+		<input type="text" class="myclass" id="username" value="" placeholder="demo ..." tabindex=5 />
+		<input type="password" class="myclass" id="password" value="" placeholder="demo ..." tabindex=6 />
+		<input type="button" class="myclass" id="login" value="login" tabindex=7 /><br />
+	</form>
+	<div class="centrer">
+		<img class="logo" src="http://chinook.memoris.fr/wp-content/uploads/2011/10/chinook.gif"/>
+	</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="jquery.easyui.min.js"></script>
+	<script src="plugins/jquery.combo.js"></script>
+	<script src="popup.js"></script>
+  </body>
+</html>
+
